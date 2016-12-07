@@ -1,21 +1,21 @@
 /*
- Mystic Balloon: http://www.team-arg.org/mybl-manual.html
-
- Arduboy version 1.5:  http://www.team-arg.org/mybl-downloads.html
-
- MADE by TEAM a.r.g. : http://www.team-arg.org/more-about.html
-
- 2016 - GAVENO - CastPixel -JO3RI
-
- Game License: MIT : https://opensource.org/licenses/MIT
-
+ * Bloonz: http://www.zgames.com/games/bloonz
+ *
+ * Created for the Arduboy: http://www.arduboy.com
+ * by the zGames team: http://www.zgames.com
+ *
+ * Adapted from Mystic Balloon v1.5
+ * by TEAM a.r.g. : http://www.team-arg.org/more-about.html
+ * 2016 - GAVENO - CastPixel -JO3RI
+ *
+ * Game License: MIT : https://opensource.org/licenses/MIT
+ *
  */
 
-//determine the game
-#define GAME_ID 34
+// identify the game (used to try and make sure the settings in EEPROM are for this game)
+#define  GAME_ID 34
 
-
-#include "Arglib.h"
+#include "zlib.h"
 #include "globals.h"
 #include "menu.h"
 #include "game.h"

@@ -1,4 +1,12 @@
-#include "Arglib.h"
+/*
+ * zlib.cpp
+ * 
+ * The zGames library version of Arduboy.cpp
+ * 
+ * www.zgames.com
+ */
+ 
+#include "zlib.h"
 
 unsigned char Arduboy::sBuffer[];
 
@@ -980,7 +988,7 @@ void Sprites::draw(int16_t x, int16_t y,
 void Sprites::drawBitmap(int16_t x, int16_t y,
                          const uint8_t *bitmap, const uint8_t *mask,
                          int8_t w, int8_t h, uint8_t draw_mode) {
-  // no need to draw at all of we're offscreen
+  // no need to draw at all if we're offscreen
   if (x + w <= 0 || x > WIDTH - 1 || y + h <= 0 || y > HEIGHT - 1)
     return;
 

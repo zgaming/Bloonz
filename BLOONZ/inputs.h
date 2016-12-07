@@ -1,3 +1,11 @@
+/*
+ * inputs.h
+ * 
+ * Button mashing.
+ * 
+ * www.zgames.com
+ */
+ 
 #ifndef INPUT_H
 #define INPUT_H
 
@@ -9,16 +17,18 @@
 
 void checkInputs()
 {
+   // Cannot control player if dead
   if (kid.balloons <= 0)
-    return; // Cannot control player if dead
+    return;
 
-    
+  // Assume not walking  
   cam.offset = vec2(0, 0);
   kid.isWalking = false;
   if (arduboy.pressed(DOWN_BUTTON))
   {
     cam.offset.y = CAMERA_OFFSET;
   }
+  
   if (arduboy.pressed(LEFT_BUTTON) && !kid.isSucking)
   {
     mapTimer = TIMER_AMOUNT;
@@ -36,10 +46,12 @@ void checkInputs()
       kid.speed.x = max(kid.speed.x - PLAYER_SPEED_AIR, -MAX_XSPEED);
     }
   }
+  
   if (arduboy.pressed(UP_BUTTON))
   {
     cam.offset.y = -CAMERA_OFFSET;
   }
+  
   if (arduboy.pressed(RIGHT_BUTTON) && !kid.isSucking)
   {
     //mapTimer = TIMER_AMOUNT;
@@ -57,7 +69,9 @@ void checkInputs()
       kid.speed.x = min(kid.speed.x + PLAYER_SPEED_AIR, MAX_XSPEED);
     }
   }
+  
   if (arduboy.pressed(A_BUTTON + DOWN_BUTTON))  gameState = STATE_GAME_PAUSE;
+  
   if (arduboy.pressed(A_BUTTON) && !kid.isBalloon)
   {
     kid.isSucking = true;
@@ -90,6 +104,7 @@ void checkInputs()
       }
     }
   }
+  
   if (!arduboy.pressed(B_BUTTON))
   {
     kid.isBalloon = false;

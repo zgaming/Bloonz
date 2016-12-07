@@ -1,3 +1,11 @@
+/*
+ * elements.h
+ * 
+ * Handle the HUD.
+ * 
+ * www.zgames.com
+ */
+ 
 #ifndef ELEMENTS_H
 #define ELEMENTS_H
 

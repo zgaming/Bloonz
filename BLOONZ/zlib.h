@@ -1,5 +1,13 @@
-#ifndef Arglib_h
-#define Arglib_h
+/*
+ * zlib.h
+ * 
+ * The zGames library version of Arduboy.h
+ * 
+ * www.zgames.com
+ */
+ 
+#ifndef zlib_h
+#define zlib_h
 
 #include <SPI.h>
 #include <Print.h>

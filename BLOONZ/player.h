@@ -1,9 +1,16 @@
+/*
+ * player.h
+ * 
+ * Ready Player One.
+ * 
+ * www.zgames.com
+ */
+ 
 #ifndef PLAYER_H
 #define PLAYER_H
 
 #include <Arduino.h>
 #include "globals.h"
-//#include "levels.h"
 #include "vec2.h"
 
 #define FIXED_POINT 5

@@ -1,3 +1,11 @@
+/*
+ * levels.h
+ * 
+ * Level definition and handling.
+ * 
+ * www.zgames.com
+ */
+ 
 #ifndef LEVELS_H
 #define LEVELS_H
 

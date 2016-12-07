@@ -1,9 +1,7 @@
-# ideas on Mystic Balloon
+# ideas on Bloonz
 
 ## gameplay ideas
 - Sprint - Double tap a direction to run faster in that direction
-- how do you get a new balloon? sucking in enemies ?
-- shouldn't we need 3 balloons, 3 balloons pop = death
 
 ## game elements ideas
 - coins with extra points: 5 coins to collect in each level
@@ -18,5 +16,4 @@
 - bosses every X levels
 
 ## todo list
-- next level screen
-- game over screen
+- ??

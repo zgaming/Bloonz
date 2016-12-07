@@ -1,3 +1,11 @@
+/*
+ * vec2.h
+ * 
+ * Vector math.
+ * 
+ * www.zgames.com
+ */
+ 
 #ifndef _VEC2_ 
 #define _VEC2_ 
 

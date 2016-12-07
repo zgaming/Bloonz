@@ -1,3 +1,11 @@
+/*
+ * enemies.h
+ * 
+ * Enemy logic. Fans, spikes, and walkers. Coins too, but they are friendly. :)
+ * 
+ * www.zgames.com
+ */
+ 
 #ifndef ENEMIES_H
 #define ENEMIES_H
 
